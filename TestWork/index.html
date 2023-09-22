@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+    </header>
+
+    <main>
+        <section id="task-form">
+            <input type="text" id="task-name" placeholder="Task Name">
+            <input type="text" id="activity" placeholder="Activity">
+            <input type="datetime-local" id="date-time">
+            <select id="reminder-type">
+                <option value="none">No Reminder</option>
+                <option value="text">Text Reminder</option>
+                <option value="sound">Sound Reminder</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </section>
+
+        <section id="task-list">
+            <h2>Tasks</h2>
+            <ul id="tasks">
+                <!-- Task items will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section id="completed-tasks">
+            <h2>Completed Tasks</h2>
+            <ul id="completed-task-list">
+                <!-- Completed task items will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section id="failed-tasks">
+            <h2>Failed Tasks</h2>
+            <ul id="failed-task-list">
+                <!-- Failed task items will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section id="score">
+            <h2>Overall Score: <span id="score-value">0</span></h2>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
