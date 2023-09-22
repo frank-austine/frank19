@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Todo App</h1>
+    <form id="new-task-form">
+      <input type="text" id="task-name" placeholder="Task Name" required>
+      <input type="text" id="task-activity" placeholder="Activity" required>
+      <input type="text" id="task-state" placeholder="State" required>
+      <input type="date" id="task-dateline" required>
+      <button type="submit">Add Task</button>
+    </form>
+  </header>
+  <main>
+    <h2>Todo List</h2>
+    <div class="filter-buttons">
+      <button id="btn-show-all">Show All</button>
+      <button id="btn-show-undone">Show Undone</button>
+    </div>
+    <h3>Incomplete Tasks</h3>
+    <ul id="incomplete-task-list"></ul>
+    <h3>Completed Tasks</h3>
+    <ul id="completed-task-list"></ul>
+  </main>
+  <footer>
+    <p>Productivity Score: <span id="productivity-score">0</span></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
